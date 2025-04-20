@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marvel vs DC</title>
+    <link rel="stylesheet" href="./game.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <p>Загрузка битвы...</p>
+        <div class="bar"><div class="progress"></div></div>
+      </div>
+    </div>
+    <div class="mk-selection" id="character-select">
+      <div class="character-preview" id="preview-left"></div>
+      <div class="character-grid">
+        <!-- MARVEL -->
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/ironman.png"
+        >
+          <img src="/imgs/ironman.png" alt="Iron Man" />
+        </div>
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/spider-man.png"
+        >
+          <img src="/imgs/spider-man.png" alt="Spider-Man" />
+        </div>
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/captain-america.png"
+        >
+          <img src="/imgs/captain-america.png" alt="Captain America" />
+        </div>
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/hulk.png"
+        >
+          <img src="/imgs/hulk.png" alt="Hulk" />
+        </div>
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/thor.png"
+        >
+          <img src="/imgs/thor.png" alt="Thor" />
+        </div>
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/blackwidow.png"
+        >
+          <img src="/imgs/blackwidow.png" alt="Black Widow" />
+        </div>
+        <div
+          class="character-option"
+          data-player="1"
+          data-img="/imgs/wolverine.png"
+        >
+          <img src="/imgs/wolverine.png" alt="Wolverine" />
+        </div>
+
+        <!-- DC -->
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/batman.png"
+        >
+          <img src="/imgs/batman.png" alt="Batman" />
+        </div>
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/superman.png"
+        >
+          <img src="/imgs/superman.png" alt="Superman" />
+        </div>
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/wonderwoman.png"
+        >
+          <img src="/imgs/wonderwoman.png" alt="Wonder Woman" />
+        </div>
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/flash.png"
+        >
+          <img src="/imgs/flash.png" alt="Flash" />
+        </div>
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/aquaman.png"
+        >
+          <img src="/imgs/aquaman.png" alt="Aquaman" />
+        </div>
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/cyborg.png"
+        >
+          <img src="/imgs/cyborg.png" alt="Cyborg" />
+        </div>
+        <div
+          class="character-option"
+          data-player="2"
+          data-img="/imgs/joker.png"
+        >
+          <img src="/imgs/joker.png" alt="Joker" />
+        </div>
+      </div>
+      <div class="character-preview" id="preview-right"></div>
+    </div>
+    <div class="button-container">
+      <button id="start-game" disabled>Начать бой</button>
+    </div>
+    <div id="battle" class="hidden">
+      <div class="hp-bar"><div class="hp-fill" id="hp1"></div></div>
+      <div class="hp-bar"><div class="hp-fill" id="hp2"></div></div>
+      <div id="game">
+        <img class="character" id="player1" style="left: 100px" />
+        <img
+          class="character"
+          id="player2"
+          style="left: 700px; transform: scaleX(-1)"
+        />
+      </div>
+      <div id="controls">
+        <p>
+          <strong>Player 1 (Marvel)</strong>: A = влево, D = вправо, S = удар, W
+          = блок
+        </p>
+        <p>
+          <strong>Player 2 (DC)</strong>: J = влево, L = вправо, K = удар, I =
+          блок
+        </p>
+      </div>
+    </div>
+    <div id="result-modal">
+      <div id="result-modal-content">
+        <h2 id="winner-text"></h2>
+        <button onclick="restartGame()">Играть снова</button>
+      </div>
+    </div>
+    <script src="./game.js"></script>
+  </body>
+</html>

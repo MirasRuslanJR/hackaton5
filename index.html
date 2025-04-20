@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Битва вселенных: DC vs. Marvel</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <a href="https://www.dc.com"
+          ><img src="./imgs/dc-logo.png" alt="DC-logo"
+        /></a>
+        <a href="https://www.marvel.com"
+          ><img src="./imgs/marvel-logo.png" alt="Marvel-logo"
+        /></a>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Главная</a></li>
+            <li><a href="./game/game.html">Битва</a></li>
+            <li>
+              <a
+                href="https://www.dc.com/blog/2024/11/04/dc-vs-marvel-the-score"
+                >Комиксы</a
+              >
+            </li>
+            <li><a href="https://www.marvel.com">Marvel</a></li>
+            <li><a href="https://www.dc.com">DC</a></li>
+            <li><a href="#support">Помощь</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Битва вселенных: DC/Marvel</h2>
+        <p>Приведи друга на арену и решите, кто сильнее: Marvel или DC!</p>
+        <a href="./game/game.html" class="game-button">Играть</a>
+      </div>
+    </section>
+    <section class="latest-posts">
+      <div class="container">
+        <h3>Последние события во вселенных</h3>
+        <div class="post-list">
+          <div class="post">
+            <img src="./imgs/The-Fantastic-Four.jpg" alt="The Fantastic Four" />
+            <h4>Фантастическая четвёрка: Первые шаги</h4>
+            <p>
+              В апреле 2025 года Marvel представила трейлер фильма
+              «Фантастическая четвёрка: Первые шаги», премьера которого
+              запланирована на 25 июля 2025 года. Это первая полноценная
+              интеграция культовой команды в киновселенную Marvel (MCU), и она
+              обещает свежий взгляд на знакомых героев.​
+            </p>
+            <a href="https://www.kinopoisk.ru/film/1287545/" target="_blank">
+              <button>Подробнее</button>
+            </a>
+          </div>
+          <div class="post">
+            <img src="./imgs/batman2.jpg" alt="The Batman 2" />
+            <h4>Бэтмен 2 в производстве</h4>
+            <p>
+              Новый фильм о Бэтмене станет прямым продолжением ленты 2022 года.
+              Роберт Паттинсон снова сыграет Брюса Уэйна, режиссёром выступает
+              Мэтт Ривз. Также вернутся Джеффри Райт, Энди Серкис и Колин
+              Фаррелл. Фильм будет частью отдельной киновселенной Бэтмена от DC
+              Studios.
+            </p>
+            <a href="https://www.kinopoisk.ru/film/4936556/" target="_blank">
+              <button>Подробнее</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="all-posts">
+      <div class="container">
+        <h3>Все статьи</h3>
+        <div class="grid">
+          <div class="card">
+            <img src="./imgs/news1.webp" />
+            <h4>Сравнение сил героев</h4>
+            <a
+              href="https://comicvine.gamespot.com/profile/jupiter429/lists/top-100-superheroes-dc-and-marvel/65586/"
+              ><button>Подробнее</button></a
+            >
+          </div>
+          <div class="card">
+            <img src="./imgs/news2.jpg" />
+            <h4>10 лучших битв Marvel и DC</h4>
+            <a
+              href="https://translated.turbopages.org/proxy_u/en-ru.ru.34e47b1c-6804ace3-f7ff437d-74722d776562/https/www.sportskeeda.com/comics/top-10-the-epic-battles-marvel-dc-comics"
+              ><button>Подробнее</button></a
+            >
+          </div>
+          <div class="card">
+            <img src="./imgs/news3.webp" />
+            <h4>Кто победит: Тор или Супермен?</h4>
+            <a
+              href="https://translated.turbopages.org/proxy_u/en-ru.ru.54cdb97a-6804ad54-28cb5943-74722d776562/https/thedirect.com/article/superman-vs-thor-stronger-fight"
+              ><button>Подробнее</button></a
+            >
+          </div>
+          <div class="card">
+            <img src="./imgs/news4.webp" />
+            <h4>История вселенной Marvel</h4>
+            <a
+              href="https://translated.turbopages.org/proxy_u/en-ru.ru.70200c0d-6804ada8-8accbb6c-74722d776562/https/marvel.fandom.com/wiki/History_of_the_Marvel_Universe"
+              ><button>Подробнее</button></a
+            >
+          </div>
+          <div class="card">
+            <img src="./imgs/news5.webp" />
+            <h4>Джокер: хаос как искусство</h4>
+            <a href="https://www.dc.com/characters/the-joker"
+              ><button>Подробнее</button></a
+            >
+          </div>
+          <div class="card">
+            <img src="./imgs/news6.webp" />
+            <h4>Будущее команды «Мстители 5»</h4>
+            <a
+              href="https://translated.turbopages.org/proxy_u/en-ru.ru.2722c546-6804ae82-d3f53e05-74722d776562/https/thedirect.com/article/avengers-5-release-cast-kang-dynasty"
+              ><button>Подробнее</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="heroes-section">
+      <h2>Топ 10 самых сильных героев Marvel и DC</h2>
+      <div class="hero-cards-container">
+        <div class="hero-card">
+          <img src="./imgs/superman-1.jpg" alt="Superman" class="hero-image" />
+          <div class="hero-info">
+            <h3>Superman</h3>
+            <p class="hero-description">
+              Сила, скорость, полет, лазеры из глаз. Почти неуязвим.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./imgs/hulk-1.jpg" alt="Hulk" class="hero-image" />
+          <div class="hero-info">
+            <h3>Hulk</h3>
+            <p class="hero-description">
+              Чем злее, тем сильнее. Уровень силы — бесконечный.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./imgs/thor-1.jpg" alt="Thor" class="hero-image" />
+          <div class="hero-info">
+            <h3>Thor</h3>
+            <p class="hero-description">
+              Бог грома, владеет Мьёльниром и силой Асгарда.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img
+            src="./imgs/doctorstrange-1.jpg"
+            alt="Doctor Strange"
+            class="hero-image"
+          />
+          <div class="hero-info">
+            <h3>Doctor Strange</h3>
+            <p class="hero-description">
+              Мастер магии, управляет временем и реальностью.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./imgs/shazam-1.jpg" alt="Shazam" class="hero-image" />
+          <div class="hero-info">
+            <h3>Shazam</h3>
+            <p class="hero-description">
+              Сила богов. Превращается в супергероя с магической силой.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img
+            src="./imgs/silversurfer-1.jpg"
+            alt="Silver Surfer"
+            class="hero-image"
+          />
+          <div class="hero-info">
+            <h3>Silver Surfer</h3>
+            <p class="hero-description">
+              Космическая мощь и энергия Вселенной.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img
+            src="./imgs/martianmanhunter-1.jpg"
+            alt="Martian Manhunter"
+            class="hero-image"
+          />
+          <div class="hero-info">
+            <h3>Martian Manhunter</h3>
+            <p class="hero-description">
+              Телепатия, невидимость, суперсила и фазирование.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img
+            src="./imgs/scarletwitch-1.jpg"
+            alt="Scarlet Witch"
+            class="hero-image"
+          />
+          <div class="hero-info">
+            <h3>Scarlet Witch</h3>
+            <p class="hero-description">
+              Управляет реальностью и изменяет вселенную.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="./imgs/flash-1.jpg" alt="Flash" class="hero-image" />
+          <div class="hero-info">
+            <h3>Flash</h3>
+            <p class="hero-description">
+              Манипулирует временем и скоростью с помощью Speed Force.
+            </p>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img
+            src="./imgs/wonderwoman-1.jpg"
+            alt="Wonder Woman"
+            class="hero-image"
+          />
+          <div class="hero-info">
+            <h3>Wonder Woman</h3>
+            <p class="hero-description">
+              Суперсила, скорость, опыт бойца, бессмертие, магическое оружие
+              (меч, щит и лассо истины).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comics-section">
+      <h2>Новые комиксы Marvel и DC</h2>
+      <div class="comics-container">
+        <div class="comic-card">
+          <img src="./imgs/comic1.jpg" alt="Comic 1" />
+          <div class="comic-info">
+            <h3>Superior Avengers (2025) #1</h3>
+            <p>
+              ЭТО НЕ ТЕ МСТИТЕЛИ, КОТОРЫХ ВЫ ЗНАЛИ! Однажды Доктор Дум захватил
+              мир и создал свою команду МСТИТЕЛЕЙ! Кристофф Вернард, сын ВИКТОРА
+              ВОН ДОМА, должен собрать новый состав Земных Могучих Героев! Кто
+              эти герои и как они стали СУПЕРИОРНЫМИ МСТИТЕЛАМИ? Узнайте в
+              истории, созданной СТИВОМ ФОКСОМ и ЛУКОЙ МАРЕСКОЙ, в мире "ОДИН
+              МИР ПОД ДОМОМ".
+            </p>
+            <span>Дата выхода: Апрель 16, 2025</span>
+          </div>
+        </div>
+        <div class="comic-card">
+          <img src="./imgs/comic2.avif" alt="Comic 2" />
+          <div class="comic-info">
+            <h3>ACTION COMICS #1085</h3>
+            <p>
+              Лоис отправляет Кларка в Арктику — отдохнуть от Метрополиса и
+              расследовать новую технологию против глобального потепления. Но он
+              находит станцию под атакой злодея, угрожающего всему человечеству.
+              Пора действовать Супермену!
+            </p>
+            <span>Дата выхода: Апрель 9, 2025</span>
+          </div>
+        </div>
+        <div class="comic-card">
+          <img src="./imgs/comic3.jpg" alt="Comic 3" />
+          <div class="comic-info">
+            <h3>GODZILLA VS. HULK (2025) #1</h3>
+            <p>
+              ВТОРОЙ РАУНД: ПРОТИВ НЕВЕРОЯТНОГО ХАЛКА! Генерал Росс и его
+              команда ТАНДЕРБОЛТС охотятся на монстров: они уже победили Фин
+              Фанга Фума, Мотру, Кумонгу и даже Халка. Остался последний —
+              ГОДЗИЛЛА. Но охота может обернуться величайшей битвой в истории.
+              Кто же на самом деле самый сильный?
+            </p>
+            <span>Дата выхода: Апрель 16, 2025</span>
+          </div>
+        </div>
+        <div class="comic-card">
+          <img src="./imgs/comic4.avif" alt="Comic 4" />
+          <div class="comic-info">
+            <h3>AQUAMAN #4</h3>
+            <p>
+              Аквамен отправляется вверх по течению, чтобы раскрыть тайну
+              заражённой воды... но почему это приводит к союзу с
+              русалкой-убийцей? Причём тут небесные пираты и древние
+              пророчества? Пока герой ищет путь домой, его манит великая голубая
+              бездна!
+            </p>
+            <span>Дата выхода: Апрель 9, 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="support" id="support">
+      <div class="container">
+        <h3>💬 Нужна помощь?</h3>
+        <div class="support-content">
+          <img src="./imgs/support.png" alt="Support" />
+          <form id="support-form">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Чем можем помочь?" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="marvel-footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-columns">
+            <ul>
+              <li><a href="https://marvel.com">О MARVEL</a></li>
+              <li><a href="https://dc.com">О DC</a></li>
+              <li>
+                <a
+                  href="https://www.dc.com/blog/2024/11/04/dc-vs-marvel-the-score"
+                  >КОМИКСЫ</a
+                >
+              </li>
+              <li><a href="./game/game.html">ИГРА</a></li>
+            </ul>
+            <ul>
+              <li><a href="#support">ОБРАТНАЯ СВЯЗЬ</a></li>
+              <li><a href="https://www.dc.com/characters">ПЕРСОНАЖИ DC</a></li>
+              <li>
+                <a href="https://www.marvel.com/characters">ПЕРСОНАЖИ MARVEL</a>
+              </li>
+              <li>
+                <a
+                  href="https://shop.dc.com/?_gl=1*avpq73*_gcl_au*MTI2ODI3NzU3MC4xNzQ0Mjc2NDg2"
+                  >DC SHOP</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-logos">
+          <a href="https://marvel.com">
+            <img src="./imgs/marvel-logo.png" alt="Marvel Logo" class="logo" />
+          </a>
+          <a href="https://dc.com">
+            <img src="./imgs/dc-logo.png" alt="DC Logo" class="logo" />
+          </a>
+        </div>
+        <div class="footer-social">
+          <h4>FOLLOW US</h4>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/facebook--v1.png"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/twitterx--v1.png"
+                alt="TwitterX"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/tumblr.png"
+                alt="Tumblr"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/youtube-play.png"
+                alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/snapchat.png"
+                alt="Snapchat"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/pinterest--v1.png"
+                alt="Pinterest"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/twitch.png"
+                alt="Twitch"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/25/ffffff/tiktok--v1.png"
+                alt="TikTok"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>©2025 MIKO</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  <!-- Lenis -->
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smooth: true,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    });
+  </script>
+</html>
